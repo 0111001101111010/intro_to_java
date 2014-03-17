@@ -1,3 +1,11 @@
+
+// Program: MapleTree
+// Programmer: Stanly Zheng
+// Description:
+// MapleTree Class
+/*
+// Date: 3/15/2014
+*/
 public class MapleTree
 {
   private int numerator;

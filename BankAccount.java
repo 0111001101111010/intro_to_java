@@ -1,3 +1,8 @@
+/**
+* Class Bank Account
+* Programmer: Dr. Wu He
+**/
+
 public class BankAccount
 {
   private String customer;  // customer's name
