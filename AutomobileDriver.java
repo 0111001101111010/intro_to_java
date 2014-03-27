@@ -1,71 +1,71 @@
-// Program: Automobile
-// Programmer: Stanely Zheng
-// Description: Describe some Automobiles
-// Date: 3/35/2014
+// Program: Automobile Program
+// Programmer: Lookmai Rattana
+// Date: 3/25/2014
 
 import java.util.Scanner;
 
 public class AutomobileDriver
 {
-  public static void main(String[] args)
-  {
+  public static void main(String[] args){
+
     Scanner stdIn = new Scanner(System.in);
 
-    int numCars;
+    int cars = 0;
     String color = "";
     String make = "";
-    boolean selection = false;
-    boolean selectionB = false;
-    System.out.println("How many cars do you want to consider? ");
-    numCars=Integer.parseInt(stdIn.nextLine());
+    boolean colorPick = false;
+    boolean makePick = false;
+    System.out.println("How many cars do you want to consider?");
+    cars = Integer.parseInt(stdIn.nextLine());
 
-    for (int i=0; i< numCars; i++){
-      Automobile vehicle = new Automobile();
-          while(!selection){
-            System.out.println("select one of the following makes between buick, cadillac, and pontiac, (b,c,p)");
-            String month = stdIn.nextLine();
-            switch (month) {
-                case "b":  make = "Buick";
-                         selection=true;
-                         break;
-                case "c":  make = "Cadillac";
-                         selection=true;
-                         break;
-                case "p":  make = "Pontiac";
-                         selection=true;
-                         break;
-                default:
-                         System.out.println("invalid selection please choose between buick, cadillac, and pontiac");
-                         break;
-            }
+    for (int i=0; i< cars; i++){
+    Automobile car = new Automobile();
+        while(!colorPick)
+        {
+          System.out.println("Select Buick, Chevrolet, or Pontiac (b,c,p): ");
+          String input = stdIn.nextLine();
+          switch (input) {
+              case "b":  make = "Buick";
+                       colorPick=true;
+                       break;
+              case "c":  make = "Cadillac";
+                       colorPick=true;
+                       break;
+              case "p":  make = "Pontiac";
+                       colorPick=true;
+                       break;
+              default:
+                       System.out.println("The only valid selections are 'b', 'c', or 'p'");
+                       break;
           }
-            // Select color
-          while(!selectionB){
-            System.out.println("select one of the colors red, blue or green (r,g,b)");
-            String month = stdIn.nextLine();
-            switch (month) {
-                case "r":
-                        color = "Red";
-                         selectionB=true;
-                         break;
-                case "g":  color = "Green";
-                         selectionB=true;
-                         break;
-                case "b":  color = "Blue";
-                         selectionB=true;
-                         break;
-                default:
-                         System.out.println("invalid selection please choose between buick, cadillac, and pontiac");
-                         break;
-            }
+        }
+        while(!makePick)
+        {
+          System.out.println("Select blue, green, or red (b,g,r): ");
+          String input = stdIn.nextLine();
+          switch (input) {
+              case "r":
+                      color = "Red";
+                       makePick=true;
+                       break;
+              case "g":  color = "Green";
+                       makePick=true;
+                       break;
+              case "b":  color = "Blue";
+                       makePick=true;
+                       break;
+              default:
+                       System.out.println("The only valid selections are 'r', 'g', or 'b'");
+                       break;
           }
-      vehicle.setMake(make);
-      vehicle.setColor(color);
-      vehicle.print();
-      if (i>=0){
-      selection = false;
-      selectionB = false;
-      }
+        }
+      car.setMake(make);
+      car.setColor(color);
+      car.print();
+          if (i>=0){
+          colorPick = false;
+          makePick = false;
+          }
     }
-   }
+  }
 }
