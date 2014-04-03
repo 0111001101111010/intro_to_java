@@ -18,9 +18,24 @@ Party(String host, int mG){
 	}
 
 	//addGuest method
-	void addGuest(String guest){
-		guestListB.add(guest);
-	}
+void addGuest(String guest){
+
+boolean duplicate=false;
+for (String s : guestListB)
+	if(guest==s)
+		duplicate = true;
+	if(!duplicate){
+		if(guestListB.size() < maxGuests){
+		    System.out.println(guest +" Has been Added to the list");
+			guestListB.add(guest);
+		}
+		else
+		    System.out.println("The Party is Full");
+		}
+	else
+ 		System.out.println(guest +" is already on the list");
+ }
+
 	//isonList guest method
 	//print party
 	void printParty(){
