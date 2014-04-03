@@ -1,28 +1,16 @@
 import java.io.*;
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-class PartyDriver{
-	 //Three instance variables that hold respectively
-      //the actual number of guestsi
-	  //an array of the names of the guests and
-	  // the party hosts name
-	public static void main(String[] args) {
-	int[] guestList;
- 	int maxGuests = 5;
-	guestList = new int[maxGuests];
-    //List<Integer> guestlist =  new ArrayList<Integer>();
-	System.out.println(guestList.length);
 
-	Party p = new Party("Frodo",1);
-	p.addGuest("Gandalf");
-	p.addGuest("Gandalf");
-	p.addGuest("Gandalf");
-	p.printParty();
+class PartyDriver{
+	public static void main(String[] args) {
+		//test driver
+	  Party party = new Party(3, "David Beckham");
+	  party.addGuest("Roberto Baggio");
+	  party.addGuest("Zinedine Zidane");
+	  party.addGuest("Roberto Baggio");
+	  party.addGuest("Johan Cruyff");
+	  party.addGuest("Diego Maradona");
+	  party.printParty();
+
 	}//end of main
-	//add guest method
-	//isonList guest method
-	//print party
 }//end of class
 
-//store the host name, and the guest name
