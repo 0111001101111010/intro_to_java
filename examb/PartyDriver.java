@@ -1,3 +1,9 @@
+/*
+* Name: Stanley Zheng
+* Description: PartyDriver Test Hardness
+* Date: 4/03/2014
+* Filename: PartyDriver.java
+*/
 import java.io.*;
 
 class PartyDriver{
@@ -10,7 +16,6 @@ class PartyDriver{
 	  party.addGuest("Johan Cruyff");
 	  party.addGuest("Diego Maradona");
 	  party.printParty();
-
 	}//end of main
 }//end of class
 

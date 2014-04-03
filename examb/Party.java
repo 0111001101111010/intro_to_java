@@ -1,3 +1,10 @@
+/*
+* Name: Stanley Zheng
+* Description: Party Class
+* Date: 4/03/2014
+* Filename: Party.java
+*/
+
 import java.io.*;
 import java.util.List;
 import java.util.Arrays;
