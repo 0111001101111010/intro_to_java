@@ -13,23 +13,23 @@ class Party{
 		hostName = host;
 	}
 
-boolean isOnList(String guest){
-//duplicates
-	boolean duplicate=false;
-//if list is full already
-//look for duplicates
-	for (String s : guestListB)
-		if(guest==s)
-			duplicate = true;
-	return duplicate;
-}
+	boolean isOnList(String guest){
+	//duplicates
+		boolean duplicate=false;
+	//if list is full already
+	//look for duplicates
+		for (String s : guestListB)
+			if(guest==s)
+				duplicate = true;
+		return duplicate;
+	}
 
-//addGuest method
+	//addGuest method
 	void addGuest(String guest){
 
 	if(guestListB.size() < maxGuests || isOnList(guest)){
 		if(!isOnList(guest)){
-			 //System.out.println(guest +" Has been Added to the list");
+			 System.out.println(guest +" Has been Added to the list");
 			guestListB.add(guest);
 		}
 		else
@@ -45,5 +45,5 @@ boolean isOnList(String guest){
 		     System.out.println("Guest list for " + hostName+"'s party:");
 		for (String s : guestListB)
 		     System.out.println(s);
-    };
+	};
 }//end of class
