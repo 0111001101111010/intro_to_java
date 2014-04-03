@@ -14,7 +14,9 @@ class PartyDriver{
     //List<Integer> guestlist =  new ArrayList<Integer>();
 	System.out.println(guestList.length);
 
-	Party p = new Party("Bob",5);
+	Party p = new Party("Frodo",5);
+	p.addGuest("Gandalf");
+	p.printParty();
 	}//end of main
 	//add guest method
 	//isonList guest method

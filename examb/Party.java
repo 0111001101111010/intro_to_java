@@ -24,10 +24,9 @@ Party(String host, int mG){
 	//isonList guest method
 	//print party
 	void printParty(){
-        while(i < t1.size()) {
-          System.out.println(t1.get(i));
-          i++;
-        }
+		     System.out.println("Your host is " + hostName);
+		for (String s : guestListB)
+		     System.out.println(s);
     };
 }//end of class
 
