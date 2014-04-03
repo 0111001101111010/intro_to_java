@@ -2,12 +2,11 @@ import java.io.*;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-class Party{
+class PartyDriver{
 	 //Three instance variables that hold respectively
       //the actual number of guestsi
 	  //an array of the names of the guests and
 	  // the party hosts name
-
 	public static void main(String[] args) {
 	int[] guestList;
  	int maxGuests = 5;
