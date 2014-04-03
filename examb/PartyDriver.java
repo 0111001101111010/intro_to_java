@@ -13,6 +13,8 @@ class PartyDriver{
 	guestList = new int[maxGuests];
     //List<Integer> guestlist =  new ArrayList<Integer>();
 	System.out.println(guestList.length);
+
+	Party p = new Party("Bob",5);
 	}//end of main
 	//add guest method
 	//isonList guest method

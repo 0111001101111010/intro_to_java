@@ -7,17 +7,28 @@ class Party{
       //the actual number of guestsi
 	  //an array of the names of the guests and
 	  // the party hosts name
-
-	public static void main(String[] args) {
-	int[] guestList;
- 	int maxGuests = 5;
+int[] guestList;
+String hostName;
+int maxGuests;
+List<String> guestListB  = new ArrayList<String>();
+Party(String host, int mG){
+	maxGuests = mG;
 	guestList = new int[maxGuests];
-    //List<Integer> guestlist =  new ArrayList<Integer>();
-	System.out.println(guestList.length);
-	}//end of main
-	//add guest method
+	hostName = host;
+	}
+
+	//addGuest method
+	void addGuest(String guest){
+		guestListB.add(guest);
+	}
 	//isonList guest method
 	//print party
+	void printParty(){
+        while(i < t1.size()) {
+          System.out.println(t1.get(i));
+          i++;
+        }
+    };
 }//end of class
 
 //store the host name, and the guest name
