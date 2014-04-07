@@ -2,7 +2,7 @@
 /*
 Program: Bank Balance **:
 Programmer: Stanley Zheng
-Description: Write a GUI program that applies these economic policy practices. More specifically, read in growthRate and inflation values and output the recommended economic policy for the given economic situation. If there is no recommended economic policy for the given economic situation, then output “No change in economic policy.” in the message dialog box.
+Description: Write a GUI program that applies these economic policy practices. More specifically, read in growthRate and inflation values and output the recommended economic policy for the given economic situation. If there is no recommended economic policy for the given economic situation, then output "No change in economic policy." in the message dialog box.
 Date: 2/19/2014
 */
 
