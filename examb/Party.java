@@ -26,8 +26,9 @@ class Party{
 	//if list is full already
 	//look for duplicates
 		for (String s : guestListB)
-			if(guest==s)
+			if(guest==s){
 				duplicate = true;
+			}
 		return duplicate;
 	}
 
