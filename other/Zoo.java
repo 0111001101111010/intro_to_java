@@ -1,53 +1,24 @@
-//Anthony Navarrete
-//IT 430
-//HW7 #2 pg. 426 ex. 4
+public class Zoo{
+	//optional driver
+	public static void main(String[] args) {
 
-public class Zoo
-{
-     //declare variables
-     String[] zooAnimals;
-     String zooName;
-     int size;
+	Zoo nyc = new Zoo("NYC", "Giraffe","Lion");
+	Zoo la = new Zoo("LA", "Dog","Cat","Fish");
+	nyc.display();
+	la.display();
+	}
 
-     //constructor
-     public Zoo()
-     {
-          size = 0;
-     }//end constructor
+    private  String[] animals;
+    private  String location;
 
-     //constructor
-     public Zoo(String[] animals, String str)
-     {
-          //zooAnimals array
-          zooAnimals = new String[animals.length];
-          zooName = str;
-          size = zooAnimals.length;
+	public Zoo(String location, String... animals){
+		this.location = location;
+		this.animals = animals;
+	}
 
-          //copy
-          for (int i = 0; i < animals.length; i++)
-          {
-              zooAnimals[i] = animals[i];
-          }
-     }//end constructor
-
-     //display method
-     public void display()
-     {
-          if(size == 0)
-          {
-              System.out.println("Zoo is vacant.");
-          }
-          else
-          {
-              System.out.print(zooName + "zoo: ");
-              for (int i = 0; i < zooAnimals.length; i++)
-              {
-                   if(i < zooAnimals.length - 1)
-                        System.out.print(zooAnimals[i] + ", ");
-                   else
-                        System.out.print(zooAnimals[i]);
-              }
-              System.out.println();
-          }
-     }//end display
-}//end class
+	public void display() {
+	   System.out.println("In the " + location + " zoo");
+	   for (String s : animals)
+	   	  System.out.println("a " + s);
+	   }
+}
