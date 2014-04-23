@@ -15,6 +15,7 @@ class SavingAccount{
 	}
 	void addMonthlyInterest(){
 		balance = balance + (balance * annualInterestRate/12);
+		balance = (double) Math.round(balance * 100) / 100;
 	}
 	double getInterestRate(){
 		return annualInterestRate;
@@ -23,5 +24,11 @@ class SavingAccount{
 		annualInterestRate = a;
 	}
 
+	int getAccount(){
+		return ACCOUNT_NUMBER;
+	}
+	double getBalance(){
+		return balance;
+	}
 //sets the annual interest rate.
 }
