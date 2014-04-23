@@ -1,8 +1,8 @@
 /*
-*	Project name: BodyMassIndex.java
+*	Project name: BodyMassIndex calculator
 *	Name: Lookmai Rattana
 *	Date: 04/22/14
-*	Description: Body Mass Index calculator
+*	Description: Body Mass Index calculator that takes height in inches and weight in pounds
 */
 
 import java.util.Scanner;

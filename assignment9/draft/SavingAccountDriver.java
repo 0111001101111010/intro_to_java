@@ -2,15 +2,15 @@
 *	Project name: Saving Account Driver
 *	Name: Lookmai Rattana
 *	Date: 04/22/14
-*	Description: Saving Account Driver
+*	Description: Saving Account Driver. Give it interest for accounts calculating over 5 month span
 */
 class SavingAccountDriver{
 
 	public static void main(String[] args)
 	{
 
-	SavingAccount saver1 = new SavingAccount(2000,10002);
-	SavingAccount saver2 = new SavingAccount(3000,10003);
+	SavingAccount saver1 = new SavingAccount(2000,"10002");
+	SavingAccount saver2 = new SavingAccount(3000,"10003");
 
 	System.out.println("Monthly balances for one year with 0.05 annual interest:\n");
 	System.out.println("Month  Account #   Balance   Account #   Balance");

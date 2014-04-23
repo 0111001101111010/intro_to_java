@@ -2,16 +2,16 @@
 *	Project name: Saving Account Java
 *	Name: Lookmai Rattana
 *	Date: 04/22/14
-*	Description: Saving Accounts for Java online
+*	Description: Saving Accounts for Java online. Has a balance and account number
 */
 
 class SavingAccount{
 
 	static double annualInterestRate;
-	final int ACCOUNT_NUMBER;
+	final String ACCOUNT_NUMBER;
 	double balance;
 
-	SavingAccount(double bal, int acc)
+	SavingAccount(double bal, String acc)
 	{
 		balance = bal;
 		ACCOUNT_NUMBER = acc;
@@ -26,7 +26,7 @@ class SavingAccount{
 		annualInterestRate = a;
 	}
 	//get account number
-	int getAccount()
+	String getAccount()
 	{
 		return ACCOUNT_NUMBER;
 	}
